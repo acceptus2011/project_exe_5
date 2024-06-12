@@ -1,0 +1,80 @@
+.Header_list {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--bg-header-color);
+  padding: 20px;
+  font-size: 15px;
+  align-items: center;
+  .Header-logo {
+    display: flex;
+    align-items: center;
+    .logo {
+      width: 40px;
+      height: 40px;
+      fill: var(--white-color);
+      &:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.15);
+      }
+    }
+    .Header_name {
+      color: var(--white-color);
+      font-size: 25px;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      margin-left: 15px;
+    }
+  }
+  .Header-menu {
+    .Menu_list {
+      display: flex;
+      justify-content: space-around;
+      .menu_item {
+        padding-right: 20px;
+        .menu_item_link {
+          color: var(--white-color);
+          margin-right: 15px;
+          &:hover {
+            color: var(--button-hover);
+          }
+        }
+      }
+    }
+  }
+  .Header_authorization {
+    .authorization_list {
+      display: flex;
+      .authorization {
+        display: flex;
+        align-items: center;
+        color: var(--white-color);
+        .user_info {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-right: 15px;
+        }
+        .authorization_link {
+          color: var(--white-color);
+          margin: 0 15px;
+          font-size: 15px;
+          &:hover {
+            color: var(--button-hover);
+          }
+        }
+        .button_logout {
+          border: medium none;
+          background-image: none;
+          background: transparent;
+          float: left;
+          background-color: transparent;
+          color: var(--white-color);
+          margin-left: 15px;
+          font-size: 15px;
+          &:hover {
+            color: var(--button-hover);
+          }
+        }
+      }
+    }
+  }
+}
